@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: karirtrack
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+    disk:
+      name: karirtrack-data
+      mountPath: /app/data
+      sizeGB: 1

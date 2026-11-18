@@ -1,0 +1,29 @@
+{
+  "name": "karirtrack-loker-manager",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Aplikasi web manajemen lamaran kerja (pencatat loker) lengkap dan kustomisabel",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173 --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "start": "node server/prod-server.mjs",
+    "preview": "vite preview --port 4173 --host 0.0.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.9",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0"
+  }
+}
